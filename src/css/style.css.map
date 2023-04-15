@@ -1,0 +1,1 @@
+{"version":3,"sources":["button.scss","style.css","nav.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;ACCJ;;ACFA;EACI,YAAA;EACA,eAAA;ADKJ","file":"style.css","sourcesContent":[".button {\n    color: red;\n}",".button {\n  color: red;\n}\n\n.nav {\n  color: green;\n  font-size: 12px;\n}",".nav {\n    color: green;\n    font-size: 12px;\n}"]}
