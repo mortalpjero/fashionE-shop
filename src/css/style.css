@@ -1,9 +1,14 @@
-.button {
-  color: red;
+/* colors */
+/* font sizes */
+/* font weight */
+.page {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.nav {
-  color: green;
-  font-size: 12px;
+.page__wrapper {
+  min-width: 428px;
 }
 /*# sourceMappingURL=style.css.map */

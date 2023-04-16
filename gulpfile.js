@@ -27,6 +27,7 @@ const server = (done) => {
     cors: true,
     notify: false,
     ui: false,
+    reloadDelay: 500
   });
   done();
 }
