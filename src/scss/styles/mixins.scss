@@ -1,3 +1,13 @@
 @mixin outline {
     outline: 2px solid black;
-  }
+}
+
+@mixin poz-reset {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+}

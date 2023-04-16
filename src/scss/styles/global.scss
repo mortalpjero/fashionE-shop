@@ -1,9 +1,10 @@
 body,
 html {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .page {
+    @include poz-reset;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: $text;
@@ -12,6 +13,8 @@ html {
 
 .page__wrapper {
     min-width: 428px;
+    min-height: 100vh;
+    @include flex;
 }
 
 img {
@@ -31,3 +34,6 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+
