@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,22 +17,53 @@
 <body class="page">
     <div class="page__wrapper">
         <header class="header">
-            <div class="burger header__burger"></div>
-            <div class="header__logo"></div>
-            <div class="widget header__widget">
-                <div class="cart header__cart"></div>
+            <div class="container">
+                <div class="burger header__burger"></div>
+                <div class="search header__search">
+                    <svg width="17px" height="17px">
+                        <use href="img/spriteicons.svg#icon-search"></use>
+                    </svg>
+                </div>
+                <div class="header__logo">
+                    <svg class="header__logo--size" width="101px" height="36px">
+                        <use href="img/spriteicons.svg#icon-main-logo"></use>
+                    </svg>
+                </div>
+                <nav class="breadcrumbs header__breadcrumbs">
+                    <ul class="breadcrumbs__list menu">
+                        <li class="menu__item"><a class="link menu__link menu__link--current">Home</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Spaces</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Products & Services</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Showroom</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Company</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Media</a></li>
+                        <li class="menu__item"><a href="#" class="link menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="widget header__widget">
+                    <div class="cart header__cart">
+                        <a href="#">
+                            <svg width="19px" height="18px">
+                                <use href="img/spriteicons.svg#icon-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="like header__like">
+                        <a href="#">
+                            <svg width="20px" height="18px">
+                                <use href="img/spriteicons.svg#icon-like"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="login header__login">
+                        <a href="#">
+                            <svg width="15px" height="18px">
+                                <use href="img/spriteicons.svg#icon-login"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <nav class="breadcrumbs">
-                <ul class="breadcrumbs__list menu">
-                    <li class="menu__item"><a>Home</a></li>
-                    <li class="menu__item"><a href="#">Spaces</a></li>
-                    <li class="menu__item"><a href="#">Products & Services</a></li>
-                    <li class="menu__item"><a href="#">Showroom</a></li>
-                    <li class="menu__item"><a href="#">Company</a></li>
-                    <li class="menu__item"><a href="#">Media</a></li>
-                    <li class="menu__item"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
         </header>
         <main class="main"></main>
         <footer class="footer"></footer>

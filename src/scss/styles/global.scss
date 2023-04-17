@@ -15,6 +15,13 @@ html {
     min-width: 428px;
     min-height: 100vh;
     @include flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $pc-screen) {
+        min-width: $pc-screen;
+        max-width: 1920px;
+    }
 }
 
 img {
@@ -35,5 +42,13 @@ img {
     overflow: hidden;
 }
 
-
+.container {
+    max-width: 1422px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $pc-screen) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 

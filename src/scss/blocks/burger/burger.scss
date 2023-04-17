@@ -1,0 +1,25 @@
+.burger {
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $black;
+        top: -6px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $black;
+        top: 6px;
+    }
+}
+
