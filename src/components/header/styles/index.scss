@@ -12,6 +12,7 @@
 .header__nav-main {
     order: -1;
     width: 100%;
+
     @media screen and (min-width: $pc-screen) {
         order: 0;
         width: max-content;
@@ -36,6 +37,7 @@
 }
 
 .header__logo--size {
+
     @media screen and (min-width: $pc-screen) {
         width: 162px;
         height: 57px;
@@ -67,6 +69,7 @@
 .header__search {
     display: none;
     margin-right: 10%;
+    
     @media  screen and (min-width: $pc-screen) {
         display: block;
         align-self: center;

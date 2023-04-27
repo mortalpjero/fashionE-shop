@@ -1,9 +1,9 @@
 .menu {
     @include poz-reset;
+    @include flex-column;
     width: 100%;
     text-align: center;
     background-color: $lightGray;
-    @include flex-column;
 
     @media screen and (min-width: $pc-screen) {
         background-color: $white;
@@ -41,6 +41,7 @@
 }
 
 .menu__link--current {
+    
     @media screen and (min-width: $pc-screen) {
         color: $currentColor;
     }
