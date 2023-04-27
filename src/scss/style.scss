@@ -1,12 +1,14 @@
 @import 'styles/mixins.scss';
-@import 'styles/vartiables.scss';
+@import 'styles/variables.scss';
 @import 'styles/global.scss';
-@import 'blocks/header/header.scss';
-@import 'blocks/footer/footer.scss';
-@import 'blocks/main/main.scss';
-@import 'blocks/menu/menu.scss';
-@import 'blocks/breadcrumbs/breadcrumbs.scss';
-@import 'blocks/link/link.scss';
-@import 'blocks/burger/burger.scss';
-@import 'blocks/search/search.scss';
-@import 'blocks/widget/widget.scss';
+
+@import '../components/nav-main/styles/index.scss';
+@import '../components/burger/styles/index.scss';
+@import '../components/footer/styles/index.scss';
+@import '../components/header/styles/index.scss';
+@import '../components/link/styles/index.scss';
+@import '../components/main/styles/index.scss';
+@import '../components/menu/styles/index.scss';
+@import '../components/search/styles/index.scss';
+@import '../components/widget/styles/index.scss';
+@import '../components/hero/styles/index.scss';

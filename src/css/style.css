@@ -17,19 +17,12 @@ html {
 }
 
 .page__wrapper {
-  min-width: 428px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 1465px) {
-  .page__wrapper {
-    min-width: 1465px;
-    max-width: 1920px;
-  }
 }
 
 img {
@@ -52,15 +45,52 @@ img {
 }
 
 .container {
+  min-width: 428px;
   max-width: 1422px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid black;
 }
 @media screen and (min-width: 1465px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    min-width: 1425px;
+    padding: 0 20px;
   }
+}
+
+.nav-main {
+  padding: 0;
+  margin: 0;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.burger {
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  position: relative;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: -6px;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: 6px;
+}
+
+.footer {
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .header {
@@ -69,7 +99,7 @@ img {
   padding-bottom: 25px;
 }
 
-.header .container {
+.header__inner {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -77,12 +107,12 @@ img {
   justify-content: space-between;
 }
 
-.header__breadcrumbs {
+.header__nav-main {
   order: -1;
   width: 100%;
 }
 @media screen and (min-width: 1465px) {
-  .header__breadcrumbs {
+  .header__nav-main {
     order: 0;
     width: -moz-max-content;
     width: max-content;
@@ -114,24 +144,23 @@ img {
   }
 }
 
-.header__burger,
-.header__widget,
 .header__cart {
   align-self: center;
 }
-
-.header__widget {
-  margin-right: 22px;
-}
-
 @media screen and (min-width: 1465px) {
-  .header__widget div {
+  .header__cart {
     margin-left: 24px;
   }
 }
 
+.header__widget {
+  margin-right: 22px;
+  align-self: center;
+}
+
 .header__burger {
   margin-left: 20px;
+  align-self: center;
 }
 @media screen and (min-width: 1465px) {
   .header__burger {
@@ -150,20 +179,31 @@ img {
   }
 }
 
-.header__like,
+.header__like {
+  display: none;
+}
+@media screen and (min-width: 1465px) {
+  .header__like {
+    display: block;
+    margin-left: 24px;
+  }
+}
+
 .header__login {
   display: none;
 }
 @media screen and (min-width: 1465px) {
-  .header__like,
   .header__login {
     display: block;
+    margin-left: 24px;
   }
 }
 
-.footer {
-  height: -moz-max-content;
-  height: max-content;
+.link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .main {
@@ -226,43 +266,6 @@ img {
   }
 }
 
-.breadcrumbs {
-  padding: 0;
-  margin: 0;
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.link {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.burger {
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  position: relative;
-}
-.burger::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  top: -6px;
-}
-.burger::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  top: 6px;
-}
-
 .search {
   width: 17px;
   height: 17px;
@@ -270,9 +273,15 @@ img {
 
 .widget {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.hero {
+  width: 100%;
+  background: url("../../../img/hero-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

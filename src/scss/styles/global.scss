@@ -12,16 +12,10 @@ html {
 }
 
 .page__wrapper {
-    min-width: 428px;
     min-height: 100vh;
-    @include flex;
+    @include flex-column;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: $pc-screen) {
-        min-width: $pc-screen;
-        max-width: 1920px;
-    }
 }
 
 img {
@@ -43,12 +37,14 @@ img {
 }
 
 .container {
+    min-width: 428px;
     max-width: 1422px;
     margin-left: auto;
     margin-right: auto;
+    @include outline;
     @media screen and (min-width: $pc-screen) {
-        padding-left: 20px;
-        padding-right: 20px;
+        min-width: $pc-screen - ($paddingWidth * 2);
+        padding: 0 $paddingWidth;
     }
 }
 

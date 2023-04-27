@@ -3,13 +3,13 @@
     padding-bottom: 25px;
 }
 
-.header .container {
-    @include flex;
+.header__inner {
+    @include flex-column;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header__breadcrumbs {
+.header__nav-main {
     order: -1;
     width: 100%;
     @media screen and (min-width: $pc-screen) {
@@ -42,24 +42,22 @@
     }
 }
 
-.header__burger,
-.header__widget,
 .header__cart {
     align-self: center;
-}
 
-.header__widget {
-    margin-right: 22px;
-}
-
-.header__widget div {
     @media screen and (min-width: $pc-screen) {
         margin-left: 24px;
     }
 }
 
+.header__widget {
+    margin-right: 22px;
+    align-self: center;
+}
+
 .header__burger {
     margin-left: 20px;
+    align-self: center;
 
     @media  screen and (min-width: $pc-screen) {
         display: none;
@@ -75,11 +73,20 @@
     }
 }
 
-.header__like,
+.header__like {
+    display: none;
+
+    @media screen and (min-width: $pc-screen) {
+        display: block;
+        margin-left: 24px;
+    }
+}
+
 .header__login {
     display: none;
 
     @media screen and (min-width: $pc-screen) {
         display: block;
+        margin-left: 24px;
     }
 }

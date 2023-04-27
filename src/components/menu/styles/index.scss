@@ -3,7 +3,7 @@
     width: 100%;
     text-align: center;
     background-color: $lightGray;
-    @include flex;
+    @include flex-column;
 
     @media screen and (min-width: $pc-screen) {
         background-color: $white;
