@@ -17,10 +17,10 @@ html {
 }
 
 .page__wrapper {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -49,7 +49,6 @@ img {
   max-width: 1422px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid black;
 }
 @media screen and (min-width: 1465px) {
   .container {
@@ -213,12 +212,12 @@ img {
 .menu {
   padding: 0;
   margin: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #b4b4b4;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  background-color: #b4b4b4;
 }
 @media screen and (min-width: 1465px) {
   .menu {
