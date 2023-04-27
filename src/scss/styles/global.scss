@@ -1,0 +1,50 @@
+body,
+html {
+  min-height: 100vh;
+}
+
+.page {
+    @include poz-reset;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $text;
+    font-weight: $regularWeight;
+}
+
+.page__wrapper {
+    @include flex-column;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    min-width: 428px;
+    max-width: 1422px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $pc-screen) {
+        min-width: $pc-screen - ($paddingWidth * 2);
+        padding: 0 $paddingWidth;
+    }
+}
+

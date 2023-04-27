@@ -1,0 +1,4 @@
+.widget {
+    @include flex-row;
+    justify-content: space-between;
+}

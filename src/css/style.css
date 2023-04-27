@@ -1,0 +1,286 @@
+/* colors */
+/* font sizes */
+/* font weight */
+/* Screen size */
+body,
+html {
+  min-height: 100vh;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 428px;
+  max-width: 1422px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1465px) {
+  .container {
+    min-width: 1425px;
+    padding: 0 20px;
+  }
+}
+
+.nav-main {
+  padding: 0;
+  margin: 0;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.burger {
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  position: relative;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: -6px;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: 6px;
+}
+
+.footer {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.header {
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 25px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__nav-main {
+  order: -1;
+  width: 100%;
+}
+@media screen and (min-width: 1465px) {
+  .header__nav-main {
+    order: 0;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.header__logo {
+  width: 105px;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1465px) {
+  .header__logo {
+    order: -2;
+    width: 100%;
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1465px) {
+  .header__logo--size {
+    width: 162px;
+    height: 57px;
+  }
+}
+
+.header__cart {
+  align-self: center;
+}
+@media screen and (min-width: 1465px) {
+  .header__cart {
+    margin-left: 24px;
+  }
+}
+
+.header__widget {
+  margin-right: 22px;
+  align-self: center;
+}
+
+.header__burger {
+  margin-left: 20px;
+  align-self: center;
+}
+@media screen and (min-width: 1465px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.header__search {
+  display: none;
+  margin-right: 10%;
+}
+@media screen and (min-width: 1465px) {
+  .header__search {
+    display: block;
+    align-self: center;
+  }
+}
+
+.header__like {
+  display: none;
+}
+@media screen and (min-width: 1465px) {
+  .header__like {
+    display: block;
+    margin-left: 24px;
+  }
+}
+
+.header__login {
+  display: none;
+}
+@media screen and (min-width: 1465px) {
+  .header__login {
+    display: block;
+    margin-left: 24px;
+  }
+}
+
+.link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  background-color: #b4b4b4;
+}
+@media screen and (min-width: 1465px) {
+  .menu {
+    background-color: #FFFFFF;
+    flex-direction: row;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.menu__item {
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+}
+@media screen and (min-width: 1465px) {
+  .menu__item {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.menu__link {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid;
+  border-color: #CACACA;
+  color: #FFFFFF;
+  font-size: 26px;
+  width: 100%;
+}
+@media screen and (min-width: 1465px) {
+  .menu__link {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1465px) {
+  .menu__link--current {
+    color: #979797;
+  }
+}
+
+.search {
+  width: 17px;
+  height: 17px;
+}
+
+.widget {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero {
+  width: 100%;
+  background: url("../../../img/hero-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

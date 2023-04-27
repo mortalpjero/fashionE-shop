@@ -1,0 +1,95 @@
+.header {
+    height: max-content;
+    padding-bottom: 25px;
+}
+
+.header__inner {
+    @include flex-column;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__nav-main {
+    order: -1;
+    width: 100%;
+
+    @media screen and (min-width: $pc-screen) {
+        order: 0;
+        width: max-content;
+    }
+}
+
+.header__logo {
+    width: 105px;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $pc-screen) {
+        order: -2;
+        width: 100%;
+        height: 57px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 44px;
+        margin-bottom: 30px;
+    }
+}
+
+.header__logo--size {
+
+    @media screen and (min-width: $pc-screen) {
+        width: 162px;
+        height: 57px;
+    }
+}
+
+.header__cart {
+    align-self: center;
+
+    @media screen and (min-width: $pc-screen) {
+        margin-left: 24px;
+    }
+}
+
+.header__widget {
+    margin-right: 22px;
+    align-self: center;
+}
+
+.header__burger {
+    margin-left: 20px;
+    align-self: center;
+
+    @media  screen and (min-width: $pc-screen) {
+        display: none;
+    }
+}
+
+.header__search {
+    display: none;
+    margin-right: 10%;
+    
+    @media  screen and (min-width: $pc-screen) {
+        display: block;
+        align-self: center;
+    }
+}
+
+.header__like {
+    display: none;
+
+    @media screen and (min-width: $pc-screen) {
+        display: block;
+        margin-left: 24px;
+    }
+}
+
+.header__login {
+    display: none;
+
+    @media screen and (min-width: $pc-screen) {
+        display: block;
+        margin-left: 24px;
+    }
+}
