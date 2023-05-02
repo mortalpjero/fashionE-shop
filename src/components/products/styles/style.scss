@@ -1,0 +1,11 @@
+.products {
+    background-image: url('../img/background-pattern.svg'), linear-gradient(0deg, rgba(17, 16, 16, 0) 0%, rgba(17, 16, 16, 0.0211887) 12.5%, rgba(17, 16, 16, 0.0211887) 88.02%, rgba(17, 16, 16, 0) 100%);
+
+    @media screen and (min-width: $midBreakpoint) {
+        padding-top: 80px;
+    }
+}
+
+.products__description {
+    margin-bottom: 26px;
+}

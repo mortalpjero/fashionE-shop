@@ -1,0 +1,23 @@
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $mobileTitle;
+    color: $specialBlack;
+    line-height: 48px;
+
+    @media screen and (min-width: $pc-screen) {
+       font-size: $title;
+    }
+}
+
+.title--inverted {
+    color: $white;
+    font-size: $invertedMobileTitle;
+}
+
+.title--special {
+    text-align: center;
+    border-bottom: 3px solid $underline;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 8px;
+}

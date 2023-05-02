@@ -58,4 +58,5 @@ p {
 .container {
     width: 100%;
     padding: 0 $paddingWidth;
+    box-sizing: border-box;
 }

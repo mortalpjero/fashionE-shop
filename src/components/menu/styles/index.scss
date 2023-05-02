@@ -24,6 +24,7 @@
 
 .menu__link {
     @include poz-reset;
+    padding: 5px 0;
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid;
@@ -35,6 +36,7 @@
     display: inline-block;
 
     @media screen and (min-width: $pc-screen) {
+        padding: 0;
         color: $black;
         text-transform: uppercase;
         font-size: $smallerText;

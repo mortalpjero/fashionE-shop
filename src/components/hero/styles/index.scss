@@ -1,11 +1,14 @@
 .hero {
     margin: 0;
-    @media screen and (min-width: $heroBreakpoint) {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $midBreakpoint) {
         height: 526px;
         background-image: url('../img/hero-picture-pc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 37%;
+        margin-bottom: 0;
     }
 }
 
@@ -14,7 +17,7 @@
     height: 434px;
     z-index: 0;
 
-    @media screen and (min-width: $heroBreakpoint) {
+    @media screen and (min-width: $midBreakpoint) {
         display: none;
     }
 }
@@ -35,58 +38,30 @@
 }
 
 .hero__text-box {
-    box-sizing: border-box;
-    padding: 30px 20px;
-    width: 90%;
-    max-width: 716px;
-    margin-left: auto;
-    margin-right: auto;
+    @include on-top;
     margin-top: -33px;
-    background-color: $heroColor;
-    color: $white;
-    z-index: 1;
-    position: relative;
 
-    @media screen and (min-width: $heroBreakpoint) {
+    @media screen and (min-width: $midBreakpoint) {
         margin-top: 0;
         position: absolute;
         width: 50%;
         max-width: 716px;
         right: 20px;
-        top: 62px;
+        top: 30px;
         padding: 50px 40px;
+    }
+
+    @media screen and (min-width: $pc-screen) {
+        top: 62px;
     }
 }
 
 .hero__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: $bold;
-    font-size: $productsTitle;
     line-height: 22px;
     margin-bottom: 15px;
 
-    @media screen and (min-width: $heroBreakpoint) {
+    @media screen and (min-width: $midBreakpoint) {
         margin-bottom: 30px;
-        font-size: $title;
         line-height: 100%;
-    }
-}
-
-.hero__text {
-    font-size: $smallerText;
-    font-weight: $regularWeight;
-    line-height: 28px;
-
-    @media screen and (min-width: $heroBreakpoint) {
-        font-size: $mediumText;
-    }
-}
-
-.hero__link {
-    margin-top: 13px;
-
-    @media screen and (min-width: $heroBreakpoint) {
-        margin-top: 50px;
     }
 }

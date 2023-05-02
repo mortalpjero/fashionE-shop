@@ -8,15 +8,17 @@ $lightestGray: #ECECEC;
 $white: #FFFFFF;
 $currentColor: #979797;
 $heroColor: #666A6F;
+$underline: #C4C4C4;
 
 
 /* font sizes */
 $title: 38px;
-$subtitle: 28px;
-$productsTitle: 22px;
+$productsTitle: 24px;
+$mobileTitle: 28px;
+$invertedMobileTitle: 22px;
 $text: 20px;
-$mediumText: 18px;
-$smallerText: 15px;
+$mediumText: 17px;
+$smallerText: 14px;
 
 /* font weight */
 $regularWeight: 400;
@@ -25,5 +27,6 @@ $bold: 700;
 
 /* Screen size break points */
 $pc-screen: 1465px;
-$heroBreakpoint: 999px;
+$midBreakpoint: 999px;
+
 $paddingWidth: 20px;

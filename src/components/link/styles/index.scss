@@ -9,3 +9,8 @@
     font-size: $smallerText;
     font-weight: $bold;
 }
+
+.link--inverted {
+    background-color: $black;
+    color: $white;
+}

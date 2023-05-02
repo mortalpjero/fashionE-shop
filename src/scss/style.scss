@@ -1,14 +1,37 @@
+// Global
+
 @import 'styles/mixins.scss';
 @import 'styles/variables.scss';
 @import 'styles/global.scss';
 
+// Items
+
 @import '../components/nav-main/styles/index.scss';
 @import '../components/burger/styles/index.scss';
-@import '../components/footer/styles/index.scss';
-@import '../components/header/styles/index.scss';
+@import '../components/title/styles/index.scss';
 @import '../components/link/styles/index.scss';
-@import '../components/main/styles/index.scss';
-@import '../components/menu/styles/index.scss';
+@import '../components/text-box/styles/index.scss';
 @import '../components/search/styles/index.scss';
 @import '../components/widget/styles/index.scss';
+@import '../components/btn/styles/index.scss';
+
+// Header
+
+@import '../components/header/styles/index.scss';
+@import '../components/menu/styles/index.scss';
+
+// Main
+
+@import '../components/main/styles/index.scss';
 @import '../components/hero/styles/index.scss';
+@import '../components/products/styles/style.scss';
+@import '../components/description/styles/index.scss';
+@import '../components/catalog/styles/index.scss';
+
+// Footer
+
+@import '../components/footer/styles/index.scss';
+
+// Other
+
+@import '../components/slider/styles/index.scss';

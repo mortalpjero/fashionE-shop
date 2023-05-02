@@ -18,3 +18,12 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+@mixin grid {
+    display: grid;
+}
+
+@mixin on-top {
+    z-index: 1;
+    position: relative;
+}
