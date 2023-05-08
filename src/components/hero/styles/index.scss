@@ -1,6 +1,67 @@
 .hero {
+    margin: 0;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $midBreakpoint) {
+        height: 526px;
+        background-image: url('../img/hero-picture-pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 37%;
+        margin-bottom: 0;
+    }
+}
+
+.hero__picture-container {
     width: 100%;
-    background: url('../../../img/hero-picture.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 434px;
+    z-index: 0;
+
+    @media screen and (min-width: $midBreakpoint) {
+        display: none;
+    }
+}
+
+.hero__picture {
+    object-fit: cover;
+    height: 100%;
+    object-position: 25%;
+    margin: 0;
+    display: block;
+}
+
+.hero__container {
+    max-width: $pc-screen;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.hero__text-box {
+    @include on-top;
+    margin-top: -33px;
+
+    @media screen and (min-width: $midBreakpoint) {
+        margin-top: 0;
+        position: absolute;
+        width: 50%;
+        max-width: 716px;
+        right: 20px;
+        top: 30px;
+        padding: 50px 40px;
+    }
+
+    @media screen and (min-width: $pc-screen) {
+        top: 62px;
+    }
+}
+
+.hero__title {
+    line-height: 22px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $midBreakpoint) {
+        margin-bottom: 30px;
+        line-height: 100%;
+    }
 }

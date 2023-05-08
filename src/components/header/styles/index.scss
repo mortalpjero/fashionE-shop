@@ -38,7 +38,7 @@
 
 .header__logo--size {
 
-    @media screen and (min-width: $pc-screen) {
+    @media screen and (min-width: $midBreakpoint) {
         width: 162px;
         height: 57px;
     }

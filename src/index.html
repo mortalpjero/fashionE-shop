@@ -16,9 +16,9 @@
 
 <body class="page">
     <div class="page__wrapper">
-        
+
         <header class="header">
-            <div class="container">
+            <div class="wrapper">
                 <div class="header__inner">
                     <div class="burger header__burger"></div>
                     <div class="search header__search">
@@ -33,13 +33,13 @@
                     </div>
                     <nav class="nav-main header__nav-main">
                         <ul class="breadcrumbs__list menu">
-                            <li class="menu__item"><a class="link menu__link menu__link--current">Home</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Spaces</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Products & Services</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Showroom</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Company</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Media</a></li>
-                            <li class="menu__item"><a href="#" class="link menu__link">Contact</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link--current">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Spaces</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Products & Services</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Showroom</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Company</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Media</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="widget header__widget">
@@ -70,11 +70,105 @@
         </header>
         <main class="main">
             <section class="hero">
-                
+                <div class="hero__picture-container">
+                    <img class="hero__picture" src="img/hero-picture-mobile.jpg" width="1000px" height="434px">
+                </div>
+                <div class="hero__container">
+                    <div class="text-box text-box--special hero__text-box">
+                        <h2 class="title title--inverted hero__title">
+                            New Generation Ceramic Tile
+                        </h2>
+                        <p class="text-box__text">
+                            Penatibus sem vitae mollis luctus mi tellus.
+                            Maximus eu eleifend aptent dapibus metus maecenas consequat.
+                            Elementum interdum a semper. Netus nullam eros nisi volutpat
+                            nibh ex ultricies. Pharetra sagittis sit aliquet at.
+                            Magna nam platea justo.
+                        </p>
+                        <a class="link text-box__link" href="#">Learn more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="wrapper container">
+                    <div class="products__inner">
+                        <div class="description products__description">
+                            <h2 class="title title--special description__title">
+                                Products
+                            </h2>
+                            <p class="description__text">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text.
+                            </p>
+                        </div>
+                        <div class="products__list catalog slider">
+                            <div class="catalog__item catalog__item--tiles slider__item">
+                                <a class="catalog__link" href="#">
+                                    <div class="catalog__picture-container">
+                                        <img class="catalog__picture" src="img/bedroom-tiles.jpg" width="987px"
+                                            height="653px">
+                                    </div>
+                                    <div class="catalog__text-box">
+                                        <h3 class="catalog__title">Bathroom Tiles</h3>
+                                        <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__item catalog__item--marble slider__item hidden">
+                                <a class="catalog__link" href="#">
+                                    <div class="catalog__picture-container">
+                                        <img class="catalog__picture catalog__picture--marble"
+                                            src="img/marble-smaller.jpg" width="159px" height="144px">
+                                    </div>
+                                    <div class="catalog__text-box">
+                                        <h3 class="catalog__title">Marble</h3>
+                                        <p class="catalog__text">Ante mus blandit sapien sociosqu</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__container">
+                                <div class="catalog__item catalog__item--flooring slider__item hidden">
+                                    <a class="catalog__link" href="#">
+                                        <div class="catalog__picture-container catalog__picture-container--half">
+                                            <img class="catalog__picture" src="img/outdoor-flooring.jpg" width="987px"
+                                                height="653px">
+                                        </div>
+                                        <div class="catalog__text-box">
+                                            <h3 class="catalog__title">Outdoor Flooring</h3>
+                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="catalog__item catalog__item--kitchen slider__item hidden">
+                                    <a class="catalog__link" href="#">
+                                        <div class="catalog__picture-container catalog__picture-container--half">
+                                            <img class="catalog__picture" src="img/kitchen-interior.jpg" width="987px"
+                                                height="653px">
+                                        </div>
+                                        <div class="catalog__text-box">
+                                            <h3 class="catalog__title">Kitchen Interior</h3>
+                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn slider-btn slider-btn--left"></button>
+                            <button type="button" class="btn slider-btn slider-btn--right"></button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+
         <footer class="footer"></footer>
+
     </div>
+
+    <script src="components/slider/logics/index.js"></script>
+
 </body>
 
 </html>

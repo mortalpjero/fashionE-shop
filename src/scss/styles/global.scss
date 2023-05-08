@@ -23,6 +23,13 @@ img {
     height: auto;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 .hidden {
     position: absolute;
     width: 1px;
@@ -36,7 +43,7 @@ img {
     overflow: hidden;
 }
 
-.container {
+.wrapper {
     min-width: 428px;
     max-width: 1422px;
     margin-left: auto;
@@ -48,3 +55,8 @@ img {
     }
 }
 
+.container {
+    width: 100%;
+    padding: 0 $paddingWidth;
+    box-sizing: border-box;
+}

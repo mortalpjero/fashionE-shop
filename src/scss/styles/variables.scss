@@ -7,19 +7,26 @@ $oldPriceColor: #CACACA;
 $lightestGray: #ECECEC;
 $white: #FFFFFF;
 $currentColor: #979797;
+$heroColor: #666A6F;
+$underline: #C4C4C4;
+
 
 /* font sizes */
-$title: 48px;
-$subtitle: 28px;
-$productsTitle: 26px;
+$title: 38px;
+$productsTitle: 24px;
+$mobileTitle: 28px;
+$invertedMobileTitle: 22px;
 $text: 20px;
-$pcMenu: 16px;
+$mediumText: 17px;
+$smallerText: 14px;
 
 /* font weight */
 $regularWeight: 400;
 $semiBold: 600;
 $bold: 700;
 
-/* Screen size */
+/* Screen size break points */
 $pc-screen: 1465px;
+$midBreakpoint: 999px;
+
 $paddingWidth: 20px;
