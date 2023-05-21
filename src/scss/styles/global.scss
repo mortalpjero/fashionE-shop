@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body,
 html {
   min-height: 100vh;
@@ -8,7 +14,7 @@ html {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: $text;
-    font-weight: $regularWeight;
+    font-weight: $regular-weight;
 }
 
 .page__wrapper {
@@ -30,33 +36,20 @@ p {
     margin: 0;
 }
 
-.hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.wrapper {
+.container {
     min-width: 428px;
     max-width: 1422px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    padding: 0 $padding-width;
+    box-sizing: border-box;
 
     @media screen and (min-width: $pc-screen) {
-        min-width: $pc-screen - ($paddingWidth * 2);
-        padding: 0 $paddingWidth;
+        min-width: $pc-screen - ($padding-width * 2);
     }
 }
 
-.container {
-    width: 100%;
-    padding: 0 $paddingWidth;
-    box-sizing: border-box;
+.special-sign{
+    font-size: 12px;
 }

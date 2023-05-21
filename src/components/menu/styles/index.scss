@@ -3,7 +3,7 @@
     @include flex-column;
     width: 100%;
     text-align: center;
-    background-color: $lightGray;
+    background-color: $light-gray;
 
     @media screen and (min-width: $pc-screen) {
         background-color: $white;
@@ -24,22 +24,24 @@
 
 .menu__link {
     @include poz-reset;
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
     padding: 5px 0;
     height: 40px;
-    line-height: 40px;
+    line-height: 30px;
     border-bottom: 1px solid;
-    border-color: $oldPriceColor;
+    border-color: $old-price-color;
     color: $white;
-    font-size: $productsTitle;
+    font-size: $products-title;
     width: 100%;
     text-decoration: none;
-    display: inline-block;
 
     @media screen and (min-width: $pc-screen) {
         padding: 0;
         color: $black;
         text-transform: uppercase;
-        font-size: $smallerText;
+        font-size: $smaller-text;
         font-weight: $bold;
         border: none;
     }
@@ -48,6 +50,6 @@
 .menu__link--current {
     
     @media screen and (min-width: $pc-screen) {
-        color: $currentColor;
+        color: $current-color;
     }
 }

@@ -1,0 +1,53 @@
+.vision {
+    position: relative;
+    height: 820px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        height: 526px;
+        margin-bottom: 120px;
+    }
+}
+
+.vision__inner {
+
+    @media screen and (min-width: $mid-breakpoint) {
+        @include flex-column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        height: 526px;
+
+    }
+}
+
+.vision__picture-container {
+    width: 100%;
+    height: 579px;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        left: 120px;
+        top: 0;
+    }
+}
+
+.vision__picture {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.vision__text-box {
+    position: relative;
+    @include positioned-first;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.expand {
+    position: relative;
+    width: 20px;
+    height: 10px;
+    border: none;
+    background-color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.expand::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 12px;
+    background-color: white;
+    transform: rotate(45deg);
+    left: 1px;
+    top: 60%;
+    border-radius: 20%;
+}
+
+.expand::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 12px;
+    background-color: white;
+    transform: rotate(-45deg);
+    right: 0;
+    top: 60%;
+    border-radius: 20%;
+}
+
+.expand--opened {
+    transform: rotate(180deg);
+}
