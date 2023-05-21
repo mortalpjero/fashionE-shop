@@ -1,0 +1,45 @@
+.solutions {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        margin-bottom: 120px;
+    }
+}
+
+.solutions__inner {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.solutions__left-part-container {
+    width: 100%;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        width: 63%;
+        @include flex-column;
+        justify-content: space-between;
+    }
+}
+
+.solutions__text-box {
+    background-color: inherit;
+    
+    @media screen and (min-width: $mid-breakpoint) {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.solutions__title {
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $pc-screen) {
+        line-height: 59px;
+    }
+}
+
+.solutions__list {
+    height: 500px;
+}

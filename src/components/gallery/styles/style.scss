@@ -1,0 +1,49 @@
+.gallery{
+    width: 100%;
+    @media screen and (min-width: $mid-breakpoint) {
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.gallery__item {
+    width: 100%;
+    height: 325px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        width: 30%;
+    }
+}
+
+.gallery__picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    display: block;
+}
+
+.gallery__link {
+    display: none;
+    margin-top: 40px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        display: block;
+    }
+}
+
+.solutions__video {
+    display: none;
+    width: 32%;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        @include flex-row;
+        align-items: flex-end;
+    }
+
+    @media screen and (min-width: $pc-screen) {
+        display: block;
+        padding-top: 30px;
+    }
+}

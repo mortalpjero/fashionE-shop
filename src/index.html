@@ -18,9 +18,11 @@
     <div class="page__wrapper">
 
         <header class="header">
-            <div class="wrapper">
+            <div class="container header__container">
                 <div class="header__inner">
-                    <div class="burger header__burger"></div>
+                    <btn class="btn burger__btn header__burger">
+                        <div class="burger"></div>
+                    </btn>
                     <div class="search header__search">
                         <svg width="17px" height="17px">
                             <use href="img/spriteicons.svg#icon-search"></use>
@@ -31,7 +33,7 @@
                             <use href="img/spriteicons.svg#icon-main-logo"></use>
                         </svg>
                     </div>
-                    <nav class="nav-main header__nav-main">
+                    <nav class="nav-main header__nav-main hidden">
                         <ul class="breadcrumbs__list menu">
                             <li class="menu__item"><a class="menu__link menu__link--current">Home</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Spaces</a></li>
@@ -90,7 +92,7 @@
                 </div>
             </section>
             <section class="products">
-                <div class="wrapper container">
+                <div class="container">
                     <div class="products__inner">
                         <div class="description products__description">
                             <h2 class="title title--special description__title">
@@ -102,7 +104,7 @@
                                 standard dummy text.
                             </p>
                         </div>
-                        <div class="products__list catalog slider">
+                        <div class="products__list catalog slider catalog__slider" id="catalog-slider">
                             <div class="catalog__item catalog__item--tiles slider__item">
                                 <a class="catalog__link" href="#">
                                     <div class="catalog__picture-container">
@@ -111,7 +113,8 @@
                                     </div>
                                     <div class="catalog__text-box">
                                         <h3 class="catalog__title">Bathroom Tiles</h3>
-                                        <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                        <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.
+                                        </p>
                                     </div>
                                 </a>
                             </div>
@@ -136,7 +139,8 @@
                                         </div>
                                         <div class="catalog__text-box">
                                             <h3 class="catalog__title">Outdoor Flooring</h3>
-                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.
+                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat
+                                                ad.
                                             </p>
                                         </div>
                                     </a>
@@ -149,7 +153,8 @@
                                         </div>
                                         <div class="catalog__text-box">
                                             <h3 class="catalog__title">Kitchen Interior</h3>
-                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat ad.
+                                            <p class="catalog__text">Ante mus blandit sapien sociosqu per consequat
+                                                ad.
                                             </p>
                                         </div>
                                     </a>
@@ -157,17 +162,441 @@
                             </div>
                             <button type="button" class="btn slider-btn slider-btn--left"></button>
                             <button type="button" class="btn slider-btn slider-btn--right"></button>
+                            <div class="slider__indicator-container">
+                                <div class="slider__indicator slider__indicator--active"></div>
+                                <div class="slider__indicator"></div>
+                                <div class="slider__indicator"></div>
+                                <div class="slider__indicator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="vision">
+                <div class="container">
+                    <div class="vision__inner">
+                        <div class="text-box vision__text-box">
+                            <h2 class="title hero__title">
+                                Vision
+                            </h2>
+                            <p class="text-box__text">
+                                Penatibus sem vitae mollis luctus mi tellus.
+                                Maximus eu eleifend aptent dapibus metus maecenas consequat.
+                                Elementum interdum a semper. Netus nullam eros nisi volutpat
+                                nibh ex ultricies. Pharetra sagittis sit aliquet at.
+                                Magna nam platea justo.
+                            </p>
+                            <a class="link text-box__link link--inverted" href="#">Learn more</a>
+                        </div>
+                        <div class="vision__picture-container">
+                            <img class="vision__picture" src="img/vision-picture.jpg" width="1324" height="883">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="solutions">
+                <div class="container">
+                    <div class="solutions__inner">
+                        <div class="solutions__left-part-container">
+                            <div class="text-box solutions__text-box">
+                                <h2 class="title solutions__title">
+                                    Creative Solutions
+                                    by Professional Designers
+                                </h2>
+                                <p class="text-box__text">
+                                    Penatibus sem vitae mollis luctus mi tellus.
+                                    Maximus eu eleifend aptent dapibus metus maecenas consequat.
+                                    Elementum interdum a semper. Netus nullam eros nisi volutpat
+                                    nibh ex ultricies. Pharetra sagittis sit aliquet at.
+                                    Magna nam platea justo.
+                                </p>
+                            </div>
+                            <div class="slider gallery">
+                                <div class="slider__item gallery__item">
+                                    <img class="gallery__picture" src="img/bedroom-mirror-picture.jpg" height="325px"
+                                        width="257px">
+                                </div>
+                                <div class="slider__item gallery__item">
+                                    <img class="gallery__picture" src="img/yellow-chair-picture.jpg" height="325px"
+                                        width="257px">
+                                </div>
+                                <div class="slider__item gallery__item">
+                                    <img class="gallery__picture" src="img/laptop-picture.jpg" height="325px"
+                                        width="257px">
+                                </div>
+                                <button type="button" class="btn slider-btn slider-btn--left"></button>
+                                <button type="button" class="btn slider-btn slider-btn--right"></button>
+                                <a class="link gallery__link link--inverted" href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="solutions__video">
+                            <img class="solutions__video-preview" src="img/video-preview-picture.jpg" height="726px"
+                                width="454px">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <div class="projects__inner">
+                        <div class="description projects__description">
+                            <h2 class="title title--special description__title">
+                                Projects
+                            </h2>
+                            <p class="description__text">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text.
+                            </p>
+                        </div>
+                        <div class="slider listing">
+                            <div class="slider__item listing__item">
+                                <div class="listing__picture-container">
+                                    <img class="listing__picture" src="img/dubai-mall-picture.jpg" width="525px"
+                                        height="351px">
+                                </div>
+                                <div class="text-box listing__text-box">
+                                    <h3 class="title listing__title">
+                                        Dubai Mall
+                                    </h3>
+                                    <p class="text-box__text listing__text">
+                                        Wood Flooring
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__item listing__item">
+                                <div class="listing__picture-container">
+                                    <img class="listing__picture" src="img/kingdom-tower-picture.jpg" width="518px"
+                                        height="347px">
+                                </div>
+                                <div class="text-box listing__text-box">
+                                    <h3 class="title listing__title">
+                                        Kingdom Tower
+                                    </h3>
+                                    <p class="text-box__text listing__text">
+                                        Marble Flooring
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__item listing__item">
+                                <div class="listing__picture-container">
+                                    <img class="listing__picture" src="img/king-road-picture.jpg" width="509px"
+                                        height="339px">
+                                </div>
+                                <div class="text-box listing__text-box">
+                                    <h3 class="title listing__title">
+                                        King Road Office
+                                    </h3>
+                                    <p class="text-box__text listing__text">
+                                        Outdoor Flooring
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__item listing__item">
+                                <div class="listing__picture-container">
+                                    <img class="listing__picture" src="img/beach-tower-picture.jpg" width="580px"
+                                        height="362px">
+                                </div>
+                                <div class="text-box listing__text-box">
+                                    <h3 class="title listing__title">
+                                        Beach Tower Alupang
+                                    </h3>
+                                    <p class="text-box__text listing__text">
+                                        Wood Flooring
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn slider-btn slider-btn--left projects__btn"></button>
+                            <button type="button" class="btn slider-btn slider-btn--right projects__btn"></button>
+                        </div>
+                        <a class="link link--inverted projects__link" href="#">View All</a>
+                    </div>
+                </div>
+            </section>
+            <section class="tile-collection">
+                <div class="container">
+                    <div class="tile-collection__inner">
+                        <div class="description tile-collection__description">
+                            <h2 class="title title--special description__title">
+                                Tile Collections
+                            </h2>
+                            <p class="description__text">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text.
+                            </p>
+                        </div>
+                        <div class="listing tile-collection__listing">
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/zurich-vision.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Zurich Vision 60×60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                                | </small>
+                                            <p class="text-box__text listing__text">
+                                                237.99 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/zurich-pearl.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Zurich Pearl 60<span class="special-sign">&#10005</span>60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/zurich-grey.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Zurich Grey 60<span class="special-sign">&#10005</span>60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/zurich-dark-grey.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Zurich Dark Grey 60<span class="special-sign">&#10005</span>60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/windsor-white-oak.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Windsor White Oak
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/sicily-grey-decor.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Sicily Grey Décor 30<span class="special-sign">&#10005</span>60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/sardinia-white.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Sardinia White
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing__item">
+                                <a class="listing__link" href="#">
+                                    <div class="listing__picture-container">
+                                        <img class="listing__picture" src="img/sicily-grey.jpg" width="333px"
+                                            height="333px">
+                                    </div>
+                                    <div class="text-box listing__text-box listing__text-box--special">
+                                        <h3 class="title listing__title">
+                                            Sicily Grey 30<span class="special-sign">&#10005</span>60
+                                        </h3>
+                                        <div class="listing__text-container">
+                                            <small class="listing__small-text">
+                                                449.99 SAR
+                                            </small>
+                                            <p class="text-box__text listing__text">
+                                                312.49 SAR
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="link link--inverted listing__expand-link" href="#">More Products</a>
+                    </div>
+                </div>
+            </section>
+            <section class="showrooms">
+                <div class="container">
+                    <div class="showrooms__inner">
+                        <div class="text-box showrooms__text-box">
+                            <h2 class="title text-box__title">
+                                Our Showrooms
+                            </h2>
+                            <p class="text-box__text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text.
+                            </p>
+                            <a class="link text-box__link link--inverted" href="#">Learn more</a>
+                        </div>
+                        <div class="showrooms__picture-container">
+                            <img class="showrooms__picture" src="img/showrooms-picture.jpg" width="817px"
+                                height="649px">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <svg class="footer__logo--size" width="122px" height="43px">
+                            <use href="img/spriteicons.svg#icon-footer-logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="footer__menu-container">
+                        <div class="footer__menu information">
+                            <div class="footer__item">
+                                <div class="information__container">
+                                    <h3 class="information__title">
+                                        Products
+                                    </h3>
+                                    <ul class="information__list invisible" id="infProducts">
+                                        <li class="information__item">Sand Stone</li>
+                                        <li class="information__item">Stone</li>
+                                        <li class="information__item">Cement</li>
+                                        <li class="information__item">Soft Stone</li>
+                                    </ul>
+                                </div>
+                                <button class="btn expand" id="btnProducts"></button>
+                            </div>
+                            <div class="footer__item">
+                                <div class="information__container">
+                                    <h3 class="information__title">
+                                        Services
+                                    </h3>
+                                    <ul class="information__list invisible" id="infServices">
+                                        <li class="information__item">Measurement Service</li>
+                                        <li class="information__item">Product Advice</li>
+                                        <li class="information__item">Interior Design</li>
+                                    </ul>
+                                </div>
+                                <button class="btn expand" id="btnServices"></button>
+                            </div>
+                            <div class="footer__item">
+                                <div class="information__container">
+                                    <h3 class="information__title">
+                                        Contact Information
+                                    </h3>
+                                    <ul class="information__list invisible" id="infContacts">
+                                        <li class="information__item">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd,
+                                            An Nuzhah, Riyadh 12474,
+                                            Saudi Arabia</li>
+                                    </ul>
+                                </div>
+                                <button class="btn expand" id="btnContacts"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__decoration-line"></div>
+                    <div class="footer__socials socials">
+                        <svg width="12px" height="22px" class="socials__facebook">
+                            <use href="img/spriteicons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg width="25px" height="20px" class="socials__twitter">
+                            <use href="img/spriteicons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg width="25px" height="25px" class="socials__instagram">
+                            <use href="img/spriteicons.svg#icon-instagram"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
     <script src="components/slider/logics/index.js"></script>
+    <script src="components/information/logic/index.js"></script>
+    <script src="components/header/logics/index.js"></script>
 
 </body>
 

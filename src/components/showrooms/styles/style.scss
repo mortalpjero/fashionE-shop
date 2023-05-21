@@ -1,0 +1,52 @@
+.showrooms {
+    position: relative;
+    min-height: 899px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        display: block;
+        margin-bottom: 120px;
+        min-height: auto;
+    }
+}
+
+.showrooms__inner {
+    @media screen and (min-width: $mid-breakpoint) {
+        position: relative;
+    }
+}
+
+.showrooms__picture-container {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
+    height: 669px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        position: relative;
+        top: 0;
+        width: 57%;
+    }
+}
+
+.showrooms__picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.showrooms__text-box {
+    @include positioned-first;
+    position: relative;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        position: absolute;
+        max-width: 48%;
+        padding: 100px 0;
+        padding-left: 86px;
+        padding-right: 120px;
+        right: 0;
+        top: 64px;
+    }
+}

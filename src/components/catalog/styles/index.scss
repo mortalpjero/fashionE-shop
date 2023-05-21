@@ -1,8 +1,7 @@
 .catalog {
-    position: relative;
     width: 100%;
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         display: grid;
         grid-template-rows: 638px;
         grid-template-columns:40% 26% 32%;
@@ -31,13 +30,13 @@
 .catalog__picture-container {
     height: 350px;
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         height: 620px;
     }
 }
 
 .catalog__picture-container--half {
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         height: 295px;
     }
 }
@@ -53,7 +52,7 @@
 }
 
 .catalog__text-box {
-    @include on-top;
+    @include positioned-first;
     padding-top: 20px;
     padding-bottom: 15px;
     background-color: $black;
@@ -63,16 +62,17 @@
     border: 1px solid $white;
     margin-top: -35px;
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         margin-top: -60px;
     }
 }
 
 .catalog__title {
-    font-size: $productsTitle;
+    font-size: $products-title;
 }
 
 .catalog__text {
-    font-size: $smallerText;
-    color: $lightGray;
+    font-size: $smaller-text;
+    color: $light-gray;
+    padding: 0 10px;
 }

@@ -1,8 +1,10 @@
 .products {
     background-image: url('../img/background-pattern.svg'), linear-gradient(0deg, rgba(17, 16, 16, 0) 0%, rgba(17, 16, 16, 0.0211887) 12.5%, rgba(17, 16, 16, 0.0211887) 88.02%, rgba(17, 16, 16, 0) 100%);
+    margin-bottom: 47px;
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         padding-top: 80px;
+        margin-bottom: 120px;
     }
 }
 

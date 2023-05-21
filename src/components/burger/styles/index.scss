@@ -3,9 +3,11 @@
     height: 2px;
     background-color: $black;
     position: relative;
+    cursor: pointer;
+    top: 50%;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 24px;
         height: 2px;
@@ -14,12 +16,35 @@
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 24px;
         height: 2px;
         background-color: $black;
         top: 6px;
     }
+
+    transition: all 0.3s ease-in-out;
 }
 
+.burger__btn {
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger--clicked {
+    transform: rotate(45deg);
+    
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    & {
+        background-color: transparent;
+    }
+}

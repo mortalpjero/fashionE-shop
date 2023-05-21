@@ -1,0 +1,26 @@
+.socials {
+    @include flex-row;
+    column-gap: 21px;
+    align-items: center;
+}
+
+.socials__facebook {
+    @media screen and (min-width: $pc-screen) {
+        width: 9px;
+        height: 16px;
+    }
+}
+
+.socials__twitter {
+    @media screen and (min-width: $pc-screen) {
+        width: 18px;
+        height: 15px;
+    }
+}
+
+.socials__instagram {
+    @media screen and (min-width: $pc-screen) {
+        width: 18px;
+        height: 18px;
+    }
+}

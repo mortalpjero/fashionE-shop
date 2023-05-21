@@ -14,6 +14,8 @@
 @import '../components/search/styles/index.scss';
 @import '../components/widget/styles/index.scss';
 @import '../components/btn/styles/index.scss';
+@import '../components/slider-btn/styles/styles.scss';
+@import '../components/expand/styles/style.scss';
 
 // Header
 
@@ -27,11 +29,21 @@
 @import '../components/products/styles/style.scss';
 @import '../components/description/styles/index.scss';
 @import '../components/catalog/styles/index.scss';
+@import '../components/vision/styles/index.scss';
+@import '../components/solutions/styles/style.scss';
+@import '../components/gallery/styles/style.scss';
+@import '../components/projects/styles/style.scss';
+@import '../components/listing/styles/style.scss';
+@import '../components/tile-collection/styles/style.scss';
+@import '../components/showrooms/styles/style.scss';
 
 // Footer
 
-@import '../components/footer/styles/index.scss';
+@import '../components/information/styles.style.scss';
+@import '../components/socials/styles/style.scss';
+@import '../components/footer/styles/style.scss';
 
 // Other
 
 @import '../components/slider/styles/index.scss';
+@import '../scss/styles/hidden.scss';

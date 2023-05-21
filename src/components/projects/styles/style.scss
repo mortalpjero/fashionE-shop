@@ -1,0 +1,25 @@
+.projects {
+    margin-bottom: 57px;
+
+    @media screen and (min-width: $pc-screen) {
+        margin-bottom: 120px;
+    }
+}
+
+.projects__inner {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__description {
+    margin-bottom: 31px;
+
+    @media screen and (min-width: $mid-breakpoint) {
+        margin-bottom: 40px;
+    }
+}
+
+.projects__btn{
+    top: 35%;
+}

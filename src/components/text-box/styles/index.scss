@@ -1,31 +1,37 @@
 .text-box {
     box-sizing: border-box;
     padding: 30px 20px;
-    width: 90%;
+    width: 100%;
     max-width: 716px;
     margin-left: auto;
     margin-right: auto;
+    background-color: $text-box-color;
 }
 
 .text-box--special {
-    background-color: $heroColor;
+    background-color: $hero-color;
     color: $white;
+    width: 90%;
+}
+
+.text-box__title {
+    margin-bottom: 10px;
 }
 
 .text-box__text {
-    font-size: $mediumText;
-    font-weight: $regularWeight;
+    font-size: $medium-text;
+    font-weight: $regular-weight;
     line-height: 28px;
 
-    @media screen and (min-width: $midBreakpoint) {
-        font-size: $mediumText;
+    @media screen and (min-width: $mid-breakpoint) {
+        font-size: $medium-text;
     }
 }
 
 .text-box__link {
     margin-top: 13px;
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         margin-top: 50px;
     }
 }

@@ -6,11 +6,29 @@
     background-color: $white;
     color: $black;
     text-transform: uppercase;
-    font-size: $smallerText;
+    font-size: $smaller-text;
     font-weight: $bold;
+    transition: transform 0.1s ease-in;
+
+    &:hover {
+        color: $decoration-color;
+        transform: scale(0.95);
+    }
+
+    &:active {
+        color: $white;
+        background-color: $black;
+    }
 }
 
 .link--inverted {
     background-color: $black;
     color: $white;
+
+    
+
+    &:active {
+        color: $black;
+        background-color: $white;
+    }
 }

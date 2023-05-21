@@ -3,6 +3,14 @@
     padding-bottom: 25px;
 }
 
+.header__container {
+    padding: 0;
+
+    @media screen and (min-width: $pc-screen) {
+        padding: 0 $padding-width;
+    }
+}
+
 .header__inner {
     @include flex-column;
     flex-direction: row;
@@ -12,6 +20,8 @@
 .header__nav-main {
     order: -1;
     width: 100%;
+    opacity: 1;
+    transition:opacity 0.3s linear;
 
     @media screen and (min-width: $pc-screen) {
         order: 0;
@@ -38,7 +48,7 @@
 
 .header__logo--size {
 
-    @media screen and (min-width: $midBreakpoint) {
+    @media screen and (min-width: $mid-breakpoint) {
         width: 162px;
         height: 57px;
     }
@@ -73,6 +83,7 @@
     @media  screen and (min-width: $pc-screen) {
         display: block;
         align-self: center;
+        margin-left: 15px;
     }
 }
 
