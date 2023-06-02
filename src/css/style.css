@@ -503,6 +503,19 @@ p {
     font-weight: 700;
     border: none;
   }
+  .menu__link:focus {
+    color: #979797;
+  }
+  .menu__link:hover {
+    color: #b4b4b4;
+  }
+}
+.menu__link:focus {
+  color: #111010;
+}
+.menu__link:hover {
+  color: #111010;
+  opacity: 0.35;
 }
 
 @media screen and (min-width: 1465px) {

@@ -44,6 +44,23 @@
         font-size: $smaller-text;
         font-weight: $bold;
         border: none;
+
+        &:focus {
+            color: $current-color;
+        }
+
+        &:hover {
+            color: $light-gray;
+        }
+    }
+
+    &:focus {
+        color: $special-black;
+    }
+
+    &:hover {
+        color: $special-black;
+        opacity: 0.35;
     }
 }
 
